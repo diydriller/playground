@@ -6,4 +6,9 @@ class MemberRequest{
         val email: String,
         val teamId: Long
     )
+
+    data class UpdateTeam(
+        val name: String,
+        val teamId: Long
+    )
 }

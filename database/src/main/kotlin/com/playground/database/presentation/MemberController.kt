@@ -15,4 +15,10 @@ class MemberController(
         memberService.createMember(request)
         return ResponseEntity.ok().build()
     }
+
+    @PostMapping("/team")
+    fun updateTeam(@RequestBody request: MemberRequest.UpdateTeam): ResponseEntity<Void> {
+        memberService.updateTeam(request)
+        return ResponseEntity.ok().build()
+    }
 }
